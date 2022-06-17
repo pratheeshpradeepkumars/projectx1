@@ -95,6 +95,7 @@ function CategoryItem({ header = "House renovation" }) {
             <tbody ref={ref}>
               {filteredData.map((catItem) => (
                 <tr
+                  key={catItem.id}
                   className={`table-row-item ${
                     selectedRow === catItem.id ? "selected" : ""
                   }`}
